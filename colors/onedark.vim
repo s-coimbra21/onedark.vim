@@ -145,7 +145,7 @@ call s:h("Statement", { "fg": s:purple }) " any statement
 call s:h("Conditional", { "fg": s:purple }) " if, then, else, endif, switch, etc.
 call s:h("Repeat", { "fg": s:purple }) " for, do, while, etc.
 call s:h("Label", { "fg": s:purple }) " case, default, etc.
-call s:h("Operator", { "fg": s:purple }) " sizeof", "+", "*", etc.
+call s:h("Operator", { "fg": s:cyan }) " sizeof", "+", "*", etc.
 call s:h("Keyword", { "fg": s:red }) " any other keyword
 call s:h("Exception", { "fg": s:purple }) " try, catch, throw
 call s:h("PreProc", { "fg": s:yellow }) " generic Preprocessor
@@ -271,9 +271,13 @@ call s:h("javaScriptNumber", { "fg": s:dark_yellow })
 call s:h("javaScriptRequire", { "fg": s:cyan })
 call s:h("javaScriptReserved", { "fg": s:purple })
 " https://github.com/pangloss/vim-javascript
+call s:h("jsIdentifier", { "fg": s:red })
 call s:h("jsArrowFunction", { "fg": s:purple })
 call s:h("jsClassKeyword", { "fg": s:purple })
 call s:h("jsClassMethodType", { "fg": s:purple })
+call s:h("jsClassName", { "fg": s:yellow })
+call s:h("jsAsyncKeyword", { "fg": s:purple })
+call s:h("jsForAwait", { "fg": s:purple })
 call s:h("jsDocParam", { "fg": s:blue })
 call s:h("jsDocTags", { "fg": s:purple })
 call s:h("jsExport", { "fg": s:purple })
@@ -293,9 +297,16 @@ call s:h("jsOperator", { "fg": s:purple })
 call s:h("jsStorageClass", { "fg": s:purple })
 call s:h("jsSuper", { "fg": s:red })
 call s:h("jsTemplateBraces", { "fg": s:dark_red })
-call s:h("jsTemplateVar", { "fg": s:green })
+call s:h("jsTemplateVar", { "fg": s:red })
 call s:h("jsThis", { "fg": s:red })
 call s:h("jsUndefined", { "fg": s:dark_yellow })
+call s:h("jsObjectProp", {"fg": s:red })
+call s:h("jsClassProperty", {"fg": s:red })
+call s:h("jsVariableDef", {"fg": s:red })
+call s:h("jsObjectKey", {"fg": s:green })
+call s:h("jsFunctionKey", {"fg": s:blue })
+call s:h("jsClassDefinition", {"fg": s:yellow })
+call s:h("jsOperator", {"fg": s:cyan })
 " https://github.com/othree/yajs.vim
 call s:h("javascriptArrowFunc", { "fg": s:purple })
 call s:h("javascriptClassExtends", { "fg": s:purple })
@@ -448,7 +459,7 @@ call s:h("typescriptBraces", { "fg": s:white })
 " XML
 call s:h("xmlAttrib", { "fg": s:dark_yellow })
 call s:h("xmlEndTag", { "fg": s:red })
-call s:h("xmlTag", { "fg": s:red })
+call s:h("xmlTag", { "fg": s:white })
 call s:h("xmlTagName", { "fg": s:red })
 
 " }}}
